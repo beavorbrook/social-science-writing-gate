@@ -1,4 +1,4 @@
-# Social-science-writing-gate v2.1 — all coordinated Skills and references
+# Social-science-writing-gate v2.2 — all coordinated Skills and references
 
 This is an inventory **of dependencies and ideas cited in this Skill package**, not a claim that each upstream project is installed on the user's computer. The package includes only this coordinating Skill and original synthesis documents; it does **not** bundle the external Skills or books.
 
@@ -45,3 +45,8 @@ Additional maintenance files: `INSTALL.md` and `CHANGELOG.md`.
 ## E. v2.1 principle (new)
 
 **One distinct important economics mechanism or judgment: normally 1–2 directly relevant, verified studies. One coherent mechanism cluster: usually 1–3 complementary studies.** These are practical evidence standards, **not bibliometric quotas**. Source fit, verified findings, proximity to the supported claim, counterevidence, and honest distinction between external evidence and local evidence determine PASS/HOLD. Cite original computed Results with internal figures/tables, not artificial literature padding.
+
+
+## v2.2 in-repository Results writing guide
+
+`references/results-economic-comparison-guide.md` is an **original additional reference file** for the existing Skill. It is not an eighth external Skill and imposes no new download dependency. It operationalizes `econ-write`'s existing emphasis on substantive economic magnitude, empirical narrative and non-misleading heterogeneity reporting using verified results already available to the researcher.

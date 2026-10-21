@@ -77,3 +77,9 @@ For **each central mechanism claim in Discussion** (and any nontrivial external 
 Suggested concise Cursor review task:
 
 > Review each distinct major economic-mechanism sentence in Discussion. Make a claim/source/evidence-level ledger; verify 1–2 direct source papers per independent claim or 1–3 complementary papers for each mechanism cluster when appropriate. Check exact source findings and place citations near propositions. Reject generic end-of-paragraph citation stacks, literature-based local causal attributions, fabricated or mismatched sources. Report Major/Critical issues and `MECHANISM_CITATION: PASS/HOLD` separately. Preserve the approved empirical results.
+
+## 7. v2.2 Results exposition and comparison review
+
+For work that revises Results, load only the final Results sections, key approved tables and `results-economic-comparison-guide.md`. Independently re-check selected derived ratios and compare the draft against the evidence ledger. Mark `RESULTS_EXPOSITION: PASS/HOLD` separately in the review; map material HOLD to the existing overall `Economic interpretation: HOLD`. Do not require new ratios when no useful validated benchmark is available.
+
+**Required separate question:** What economically instructive comparison was available in the approved outputs but omitted from the written paragraph? Name its inputs and why it changes the reader's understanding. Do not privilege the most dramatic unit if it is not representative.

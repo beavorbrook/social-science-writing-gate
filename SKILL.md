@@ -1,9 +1,9 @@
 ---
 name: social-science-writing-gate
-description: Coordinate seven existing research/writing skills, two JMU guides and two anti-defensive-writing passes; enforce an economics argument gate and claim-level, source-verified literature support for key economic mechanisms in Results and Discussion. Use for drafting, reviewing and integrating economics and environmental-economics manuscripts with Codex and Cursor.
+description: Coordinate seven existing research/writing skills, two JMU guides and two anti-defensive-writing passes; enforce an economics argument gate, a Results comparison-and-magnitude gate, and claim-level source verification for proposed economic mechanisms. Use for drafting, reviewing and integrating economics and environmental-economics manuscripts with Codex and Cursor.
 ---
 
-# Social Science Writing Gate — Economics-Enhanced v2.1
+# Social Science Writing Gate — Economics-Enhanced v2.2
 
 ## 0. Role and precedence
 
@@ -45,6 +45,7 @@ Before drafting or revising a manuscript, and again before final PASS, produce a
 | Economic phenomenon | What happened in the economy, to whom/where/when, in substantive units? |
 | Puzzle / research question | Why does it matter, and what needs explanation beyond the arithmetic? |
 | Main result and magnitude | What is directly established by this study (sample, years, outcome, quantitative size)? |
+| Most informative economic comparison | What source-verified pair, group, benchmark, time comparison, or scale makes the result intelligible? Is it representative of the full sample? |
 | Candidate economic mechanism(s) | Which *specific* economic forces could account for it: structural composition, energy mix, technology, prices/incentives, demand, urbanization, firm behavior, regulation, etc.? Why, in economic terms? |
 | Observable predictions | If mechanism M operated, which **distinctive** observable X would differ from a competing mechanism? |
 | Evidence in this study | Which variables, comparisons, tables or figures support/challenge X? Distinguish accounting identity from mechanism testing. |
@@ -129,11 +130,21 @@ Synthesize prior studies around competing explanations, not an author-year list.
 
 Explain what economic behavior or outcome each variable measures, and why its definition fits the question. Distinguish nominal/real output; territorial/consumption emissions; absolute emissions/intensity; GDP-weighted aggregate/equal-city dispersion. State whether an analysis is an identity, a descriptive statistic, an association, or a causal estimator. Equations belong here or in an appendix; do not crowd Discussion with their algebra.
 
-### Results — phenomenon → magnitude → meaning
+### Results — phenomenon → verified magnitude → informative comparison → meaning (v2.2)
 
-**Required order for each main subsection**: (1) state the economically substantive observed fact, (2) report an intuitive size and benchmark, (3) refer to the relevant table/figure, (4) give a brief interpretation tied to the question, (5) explain heterogeneity/robustness only insofar as it changes a substantive conclusion, (6) point forward to a mechanism/implication question addressed later. Report unsupported mechanisms as open, not as verified findings.
+**Results is evidence-driven economic storytelling, not a table-by-table readout.** State the economically substantive finding first, quantify it, choose an informative contrast, refer to its source table/figure, explain exactly what the observed evidence establishes, then transition to the mechanism question for Discussion. Vary paragraph structure naturally; do not fill a rigid six-sentence template.
 
-Results must not end at “CV changes sign under city omission.” Also explain which substantive inter-city comparison depends on that city and **why it matters for the reader's assessment**; reserve extended method diagnostics for an appendix when appropriate. In descriptive work, “economic significance” means magnitude, distribution, real-world benchmark and consequences—**not necessarily a p-value or regression coefficient**.
+**Mandatory pre-draft step: the Substantive Economic Magnitude and Comparison Gate.** Before writing a substantial Results subsection, inspect the approved result table(s) and identify candidate reader-relevant comparisons, such as: a high-versus-low level, before-versus-after ratio, absolute versus proportional change, within-unit versus between-unit movement, group/sector contrasts, observed versus benchmark magnitude, classification versus underlying continuous changes, or a sensitivity case that changes a substantive conclusion. Select the *smallest set* that explains the important economic phenomenon, normally one primary comparison plus a complementary or contrasting case **when supported**. Never fabricate a contrast to satisfy a quota; never present an extreme pair as the entire regional distribution.
+
+**Derived economic magnitude, only when legitimate.** Calculate informative ratios, gaps, percentage-point changes, units, and offsets from verified source numbers using a reproducible check. Confirm numerator/denominator units, time periods, price base, sample and emissions boundary are comparable; guard against unstable near-zero denominators, mechanically linked quantities and misleading averages. Record formula, inputs, source table and rounding. A derived magnitude is a transparent description, **not a new econometric result or causal mechanism**. When no reliable comparison is possible, say so; do not invent it.
+
+**Two-part disclosure:** (a) what a typical reader should learn about the economy; (b) why this comparison—not merely the value or statistical definition—matters for the paper's research question. Explain how the finding modifies the substantive claim: persistence versus catch-up, relative progress versus absolute pressure, balanced versus concentrated contribution, heterogeneous growth configurations, or sensitivity of an economically relevant classification. Preserve genuine counterexamples and uncertainty rather than selecting only dramatic pairs.
+
+**Placement:** Results prioritize the study's own verified tables/figures and economical explanation of observed facts; keep untested production, energy, demographic and policy *mechanisms* for Discussion (with literature). Avoid repeating every equation, table row, map color, or technical robustness check. Explain a map's relevant economic geography only if the mapped variable supports it; maps alone do not demonstrate structural specialization or spatial spillovers. End with **one specific unanswered economic explanation**, without repeating it in several transitions.
+
+**Mandatory Result subsection test:** Could a reader without the formulas answer (i) *what happened?*, (ii) *how large was it compared with what?*, (iii) *which units or periods differed, and is the example representative?*, (iv) *why does it change the economic assessment?*, and (v) *what does the paper not establish?* If a material answer is missing despite available data, assign `RESULTS_EXPOSITION_HOLD` and repair before polishing. This is a named sub-gate of `Economic interpretation: PASS/HOLD`; it does **not** change the existing three final status fields.
+
+For full drafting logic, anti-patterns and transferable examples, read **`references/results-economic-comparison-guide.md`** when revising Results. Read it selectively; it is not a new external Skill.
 
 ### Discussion — explain WHY; compare; distinguish; infer proportionately
 
@@ -176,12 +187,12 @@ Borrow from `iik1/academic_writing_skills` the **field baseline first, target-jo
 ## 8. Codex–Cursor workflow with TWO distinct quality gates
 
 1. **Scope and version lock:** Find latest approved manuscript/data; classify paper type and protected content; confirm language, requested section, output and no-change boundaries.
-2. **Economic argument map FIRST:** Map each finding to phenomenon, theoretical possibilities, actual evidence, sources, competing explanations and bounded implications (Section 2). Mark holes; do not hide them with fluent prose.
+2. **Economic argument map FIRST:** Map each finding to phenomenon, **the most informative comparable magnitudes**, theoretical possibilities, actual evidence, sources, competing explanations and bounded implications (Section 2). For Results, create a short candidate-comparison ledger from approved tables before drafting. Mark holes; do not hide them with fluent prose.
 3. **Evidence/source verification:** Build the v2.1 claim-to-source ledger for **each important Discussion mechanism**, verify original passages and final calculation tables, assess direct relevance and scope, and avoid reusing citations copied from earlier LLM output without checking.
 4. **Draft or targeted revision:** Write around the research question; preserve approved empirical conclusions unless the researcher authorizes a scientific revision.
-5. **Economics + literature gate — Lead check:** Does each key Results/Discussion segment explain substantive meaning, not only method and numerical sensitivity? Does every important Discussion mechanism have suitably placed, verified direct evidence (normally 1–2 per distinct claim or 1–3 complementary works per channel cluster), or an explicitly downgraded evidence status? If not, revise or HOLD **before language polishing**.
+5. **Economics + literature gate — Lead check:** For Results, did the agent select and validate a representative, informative economic comparison (or document why none applies), rather than merely enumerate statistics? Does each key Results/Discussion segment explain substantive meaning, not only method and numerical sensitivity? Does every important Discussion mechanism have suitably placed, verified direct evidence (normally 1–2 per distinct claim or 1–3 complementary works per channel cluster), or an explicitly downgraded evidence status? If not, revise or HOLD **before language polishing**.
 6. **Anti-Defensive-Writing Pass 1:** Revise the current full draft and log actual changes; preserve limitations and epistemic labels.
-7. **Independent Cursor economics referee via REAL ACP:** Cursor reads relevant source, Results, Discussion and mechanism evidence. Must raise specific `ECONOMIC_INTERPRETATION`, `MECHANISM_CITATION`, `COMPETING_MECHANISMS`, `LITERATURE_FIT`, `POLICY_PROPORTIONALITY` concerns alongside numeric, causal, and prose checks. Require concrete paragraph locations and verification coverage. Do not fabricate independent work.
+7. **Independent Cursor economics referee via REAL ACP:** Cursor reads relevant source, Results, **the candidate-comparison ledger and its raw-input arithmetic**, Discussion and mechanism evidence. Must raise specific `ECONOMIC_INTERPRETATION`, `MECHANISM_CITATION`, `COMPETING_MECHANISMS`, `LITERATURE_FIT`, `POLICY_PROPORTIONALITY` concerns alongside numeric, causal, and prose checks. Require concrete paragraph locations and verification coverage. Do not fabricate independent work.
 8. **Codex adjudication:** Resolve Critical/Major issues with evidence and tracked actual changes. Disagreement persists as a documented limitation or HOLD, not automatic PASS.
 9. **Anti-Defensive-Writing Pass 2:** Review the *revised* manuscript, independently from Pass 1; cut repeated cautions and mechanical prose without weakening scientific boundaries.
 10. **Final dual gate:** Report **Scientific integrity status** and **Economic interpretation status** separately. Only `FINAL PASS` when both pass, claim-level mechanism citation support passes, source/citation consistency passes, and real ACP evidence exists. Otherwise `PASS WITH DISCLOSED LIMITATIONS` when nonblocking issues remain, or `HOLD` for material gaps.
@@ -194,7 +205,7 @@ Cursor must answer, with passage references:
 
 - What is the one-sentence economic question and what does the article establish?
 - Does the Introduction promise a causal/policy answer not delivered by the actual design?
-- Which central result is merely a change in a metric, and how has it been translated into a substantive economic fact?
+- Which central result is merely a change in a metric, and how has it been translated into a substantive economic fact? For each Results subsection, was the most reader-informative *valid* ratio, gap, change or contrast considered and accurately reported? If an obvious benchmark was omitted, why?
 - For observed regional differences, what plausible **economic** explanations are distinguished? Which have local evidence, which only literature support, and which are unresolved?
 - Where does the paper interpret a composition/technology/policy channel without measuring it?
 - For every important economic mechanism, are the closest one or two (or one to three complementary studies per mechanism cluster) directly relevant, verified and cited alongside the proposition? Does each citation actually study/support the attributed channel, and is it comparable to the current emission boundary and period?
@@ -207,10 +218,11 @@ A missing answer to a *core* question is a **Major** item; a central unsupported
 
 ## 10. Task-scaled outputs and reference loading
 
-Minimum for a substantial draft/revision: final manuscript section, **Economic Argument Matrix**, claim-to-original-source ledger with mechanism-by-mechanism citation adequacy and placement check, actual Cursor referee report, Codex adjudication, separate pass-1/pass-2 logs, and final **dual-gate** memo. Version-lock files; preserve original until approval. In a small prose-polish task, a concise inline matrix and brief log suffice.
+Minimum for a substantial draft/revision: final manuscript section, **the Results comparison-and-magnitude ledger when Results are revised**, **Economic Argument Matrix**, claim-to-original-source ledger with mechanism-by-mechanism citation adequacy and placement check, actual Cursor referee report, Codex adjudication, separate pass-1/pass-2 logs, and final **dual-gate** memo. Version-lock files; preserve original until approval. In a small prose-polish task, a concise inline matrix and brief log suffice.
 
 For nuanced instructions and examples, read **only when relevant**:
 
+- `references/results-economic-comparison-guide.md` — **v2.2 Results-only** source-to-claim comparison selection, magnitude verification, examples and independent review rubric.
 - `references/economic-argument-guide.md` — practical argument structure and the descriptive-mechanism ladder; results/discussion paragraph pattern and Zhejiang illustration.
 - `references/referee-and-source-checklist.md` — economics referee rubric, claim-level mechanism citation audit, source limits, and copy-ready prompts.
 - `REFERENCES_AND_SKILLS.md` — exact seven upstream Skills, both JMU guides, supplementary economic-writing sources, and dependency versus inspiration distinctions.
@@ -219,6 +231,6 @@ These are **original synthesized rules based on cited sources** (see provenance 
 
 ## 11. Token discipline and final decision
 
-Load the latest manuscript and only the original results/sources needed to evaluate the paragraph. Send Cursor small file paths and explicit claims to check. Use the seven skills already installed; do not paste entire upstream manuals. The 2-stage economics + prose audit is worth more than extra speculative literature hunting.
+Load the latest manuscript and only the original results/sources needed to evaluate the paragraph. Send Cursor small file paths and explicit claims to check. Use the seven skills already installed; do not paste entire upstream manuals. For Results work, read the narrow comparison guide and reuse existing verified result tables. The 2-stage economics + prose audit is worth more than extra speculative literature hunting.
 
 **Final acceptance statement must report the two existing fields plus an explicit third field `Mechanism citation support: PASS/HOLD/NOT_APPLICABLE`:** `Scientific integrity: PASS/HOLD` and `Economic interpretation: PASS/HOLD`. A missing mechanism test need not block a *descriptive* paper if the argument accurately distinguishes observed economic patterns from unresolved causes and provides an evidence-grounded interpretation. Unsupported answers to why/how or hollow policy claims **do** block publication-ready writing.
