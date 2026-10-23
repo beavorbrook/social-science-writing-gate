@@ -67,17 +67,8 @@ Ensure the agent can distinguish: (a) the paper's own Table/Figure-based finding
 When updating from v2.1, keep the original directory and overwrite the seven existing files plus the new `references/results-economic-comparison-guide.md` after a backup. Confirm the new guide exists and that `SKILL.md` contains `Substantive Economic Magnitude and Comparison Gate`. Test by asking Codex to identify the most informative verified economic contrast in an approved Results table, calculate it with a source trail, and have Cursor independently check whether it is properly explained. The new quality sub-gate is `RESULTS_EXPOSITION: PASS/HOLD`. No existing Discussion gate is removed.
 
 
-## 历史v2.3 RC1隔离测试的保留说明（正式安装可跳过）
+## v2.3.0正式版的使用边界
 
-**以下仅记录RC1的历史隔离测试方法；正式发布后的升级以本文“正式安装位置”为准。**在项目内建立一个只用于测试的独立文件夹，例如 `literature_collaboration/skill_v2.3_pilot/skill_candidate/social-science-writing-gate/`，将ZIP中的 `social-science-writing-gate/` 完整复制进去。让 Codex 和 Cursor **显式读取该目录的 `SKILL.md` 和新增指南**；正式 `.agents/skills/social-science-writing-gate` 仍保持 v2.2。某些工具不会自动发现任意目录中的Skill，所以**必须通过文件路径明确加载**，不能声称普通Skill发现机制必然启用候选版本。
+v2.3.0已经通过历史RC1的Introduction/Literature/Hypothesis写作试验并在GitHub主分支发布。安装时请更新经过确认的活动Skill路径，不再采用历史RC1隔离目录作为正式安装。旧版备份应妥善保留，以便回滚。
 
-推荐测试一份当前稿（如英文v2.8）的 **Sections 1–2 独立候选写作及反事实对照**：比较v2.2/v2.8基线与v2.3版本在研究问题、贡献定位、文献综合和 `H4` 敏感性假设分类上的改进。以相同已核验参考文献与正文结果为依据，不得删除有效文献、重跑估计或修改已批准版本。对v2.8中已存在的 `H4`，候选稿可以在**隔离测试副本**中转换为不编号的辅助稳健性陈述，但必须保留影响Section 3/4.5/5/6的修改建议，未经批准不能整合或覆盖正式v2.8。
-
-验收要点：
-
-- 明确的经济问题超越“指标关系在数学上可共存”；具体比较最接近文献中的增量发现，而非仅展示多个方法。
-- 2.1–2.3以被核验的经济发现/不同研究对象/尚待回答的问题为主线，不回到CV/LMDI公式或EDGAR目录叙事。
-- 正文中的经济学假设与辅助稳健性检验分离；新稿**不出现以测度敏感性为题的 `H4` 或等价 `Hn`**。
-- 两项原来已完成的Results/Discussion质量门禁不退步；Codex与Cursor对源文献核验程度、程序性HOLD和稿件实质性PASS分别报告。
-
-**正式版已经发布至GitHub；** 本包不提供上游引用验证器的修复，也不把 `audit_incomplete` 假装为通过。
+本Skill不捆绑上游 `econ-write` 的引文验证器，也不替代其正式引文核验门禁。其他项目的 `audit_incomplete` 状态不能仅凭本Skill的写作质量PASS解除。
