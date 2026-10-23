@@ -70,12 +70,12 @@ When describing mechanism M:
 
 Correct approach: give the measured fact, explain the economic stakes, discuss calibrated alternative channels and identify what evidence would distinguish them.
 
-## F. A short review for each H1–H4 style finding
+## F. Three substantive claims plus unnumbered sensitivity (illustrative only)
 
 - **H1 — Disparities:** distinguish starting positions, proportional improvement and changing sector/energy structure; explain why distributional changes matter for fair comparisons. Avoid claiming formal spatial spillovers from maps alone.
 - **H2 — Accounting offsets:** identify the magnitude of output/population/aggregate intensity contributions; ask what further sector/energy evidence would unpack the composite term. Distinguish efficiency improvement from absolute decarbonization.
 - **H3 — Decoupling:** economic difference between positive growth + falling emissions versus both still increasing; assess whether the endpoint class is borderline and whether it persists in annual transitions.
-- **H4 — Sensitivity:** explain which economic **conclusions** shift (e.g., an individual city's low-carbon ranking), not simply which calculation parameter was changed. Place low-value technical permutations in the appendix.
+- **Unnumbered robustness / measurement sensitivity (not H4):** explain which economic **conclusions** shift (e.g., an individual city's low-carbon ranking), not simply which calculation parameter was changed. Place low-value technical permutations in the appendix. Never write a stand-alone sensitivity H4 or equivalent Hn in new manuscripts.
 
 ## G. Literature integration matrix (fill, do not hallucinate)
 

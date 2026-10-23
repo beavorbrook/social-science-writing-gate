@@ -1,4 +1,4 @@
-# Social-science-writing-gate v2.2 — all coordinated Skills and references
+# Social-science-writing-gate v2.3.0 — all coordinated Skills and references
 
 This is an inventory **of dependencies and ideas cited in this Skill package**, not a claim that each upstream project is installed on the user's computer. The package includes only this coordinating Skill and original synthesis documents; it does **not** bundle the external Skills or books.
 
@@ -33,9 +33,9 @@ These are structural writing references, not economics mechanism data sources or
 
 These are **sources of adapted writing rules**, not extra dependencies that the package automatically installs, and their content is synthesized rather than copied wholesale.
 
-## D. Four locally packaged documents
+## D. Coordinating Skill and bundled original reference files
 
-- `SKILL.md` — authoritative coordinating instructions, now v2.1 with claim-level mechanism-citation gate.
+- `SKILL.md` — authoritative coordinating instructions, now v2.3; retains the v2.1 mechanism-citation and v2.2 Results gates, adds Introduction/Literature/hypothesis checks.
 - `references/economic-argument-guide.md` — applied argument patterns, evidence levels S1–S5 and new v2.1 citation examples.
 - `references/referee-and-source-checklist.md` — source provenance, independent referee rubric and new v2.1 source-by-claim audit.
 - `REFERENCES_AND_SKILLS.md` — this inventory.
@@ -50,3 +50,8 @@ Additional maintenance files: `INSTALL.md` and `CHANGELOG.md`.
 ## v2.2 in-repository Results writing guide
 
 `references/results-economic-comparison-guide.md` is an **original additional reference file** for the existing Skill. It is not an eighth external Skill and imposes no new download dependency. It operationalizes `econ-write`'s existing emphasis on substantive economic magnitude, empirical narrative and non-misleading heterogeneity reporting using verified results already available to the researcher.
+
+
+## v2.3.0 — Introduction/Literature/Hypothesis reference
+
+`references/introduction-literature-argument-guide.md` is a new **original synthesized** guide. It adapts general economics writing logic and closest-literature-positioning principles already cited in Section C; it does not copy the upstream `franklee16` or other Skill files. It adds a cross-paper editorial rule: sensitivity and robustness checks are supporting analyses, not numbered H4/Hn research hypotheses. The v2.3.0 refinement also emphasizes concrete economic openings and selective Results previews. This is the published stable version.
