@@ -97,3 +97,4 @@ Report exact passage, source table/cells, revised wording and Critical/Major/Min
 ## 7. Reviewer prompt (copy ready)
 
 > Independently audit Section 4 against `references/results-economic-comparison-guide.md`. For each subsection, read its final approved source tables and identify the 1–2 most informative *valid* economic contrasts. Check whether the draft selects and quantifies them, explains what they mean for the research question, and distinguishes illustrative cases from the full sample. Verify every newly derived ratio or gap and its price base, time, units and denominator. Report paragraph-level Critical/Major/Minor issues and `RESULTS_EXPOSITION: PASS/HOLD`. Do not add new models, literature mechanisms or fabricated comparisons. Preserve numerical results and original sources.
+

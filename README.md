@@ -1,14 +1,26 @@
-# Social Science Writing Gate — Economics-Enhanced v2.3.0
+# Social Science Writing Gate — Economics-Enhanced v2.4.0-rc2
 
 An orchestration **Codex Skill** for empirical economics, environmental/energy economics, regional economics, and social-science writing. It coordinates established research Skills instead of copying all their code or documentation.
 
-## What v2.3.0 adds
+## What v2.4.0-rc2 refines (unreleased release candidate)
 
-- **Economic Question & Contribution Check:** An Introduction must pose a consequential, answerable economic question beyond indicator identities or combinations of methods, and justify its marginal contribution relative to closest prior evidence.
-- **Literature Synthesis & Positioning Check:** Compare verified research findings, settings, designs and unresolved substantive questions rather than cataloging authors or statistical definitions.
-- **Hypothesis rule for all future papers:** Do not number robustness/measurement sensitivity as H4 or any research hypothesis. Keep such checks unnumbered in Methods/Robustness. For legacy approved drafts, propose a safe cross-section migration and seek author approval.
-- **Concise Introduction review:** Open with a concrete economic tension; keep the closing results preview selective rather than dense.
-- **New reference:** [introduction-literature-argument-guide.md](references/introduction-literature-argument-guide.md), plus an expanded independent Cursor referee checklist.
+- Separate journal Methods, a locatable replication companion and author-facing QA logs.
+- Display central formulas without needless equation renumbering.
+- Distinguish exact, analogous and framework-level source support at its actual verification depth.
+- Apply the same principles to a non-carbon econometric brief without importing accounting formulas or cutoffs.
+
+The planned stable version is v2.4.0. No stable release, installation or publication is represented by this candidate.
+
+- **Data/Empirical Framework Exposition Check:** Put data provenance, essential equations, valid classification rules and clear economic meaning before implementation minutiae.
+- **New original guide:** [data-empirical-framework-guide.md](references/data-empirical-framework-guide.md) covers variables and units, concise data sources, Figure/Table 1 placement, source-method matching, LMDI and author-specified identities, decoupling interpretation and reproducibility boundaries.
+- **Independent Cursor review:** `DATA_METHODS_EXPOSITION: PASS/HOLD` is a writing-quality sub-check only, not an executable formal literature validator.
+- **Transferability:** Do not impose the pilot paper's Section 3 numbering, Kaya/LMDI/Tapio choices, two-reference preference or figure moves on unrelated empirical papers.
+
+## Retained v2.3.0 Introduction/Literature/Hypothesis improvements
+
+- Concrete answerable economic research questions and contribution positioning; synthesis of verified literature findings.
+- No H4 or other numbered hypothesis for sensitivity, robustness or software diagnostics.
+- Concrete Introduction opening and proportionate results preview.
 
 ## Retained v2.2 Results improvements
 
@@ -25,12 +37,13 @@ An orchestration **Codex Skill** for empirical economics, environmental/energy e
 
 ## Install
 
-**Stable release:** Back up your existing project- or user-level installation, then update the existing `social-science-writing-gate` directory from this repository or the matching ZIP. See [INSTALL.md](INSTALL.md) for safe installation, actual Skill discovery, verification and rollback. Do not install duplicate, conflicting copies.
+**Pilot only:** Install this archive in an isolated, explicitly addressed directory; the active stable v2.3.0 installation and GitHub `main` must remain unchanged. See [INSTALL.md](INSTALL.md) for the reversible test. Do not create duplicate active installations.
 
 ## Files
 
 - [SKILL.md](SKILL.md): Coordinating Skill and quality gates
 - [REFERENCES_AND_SKILLS.md](REFERENCES_AND_SKILLS.md): Seven original Skills and economic-writing sources
+- [references/data-empirical-framework-guide.md](references/data-empirical-framework-guide.md): v2.4 Data/Empirical Framework guide
 - [references/introduction-literature-argument-guide.md](references/introduction-literature-argument-guide.md): v2.3 Introduction/Literature/Hypotheses guide
 - [references/results-economic-comparison-guide.md](references/results-economic-comparison-guide.md): v2.2 Results drafting and reviewer checklist
 - [references/economic-argument-guide.md](references/economic-argument-guide.md): Economic argument guidance
@@ -41,4 +54,4 @@ An orchestration **Codex Skill** for empirical economics, environmental/energy e
 
 Writing guidance is synthesized and adapted from sources acknowledged in [`REFERENCES_AND_SKILLS.md`](REFERENCES_AND_SKILLS.md). This repository does **not** bundle upstream Skills or copyrighted books. Scientific claims and references should be independently verified.
 
-**Version: 2.3.0 (stable release; supersedes v2.2.0)**
+**Version: 2.4.0-rc2 (unreleased candidate for planned v2.4.0; active stable remains v2.3.0)**

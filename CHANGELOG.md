@@ -1,5 +1,22 @@
 # Changelog
 
+## v2.4.0-rc2 — Unreleased release candidate for planned v2.4.0
+
+- Refined four Methods areas: manuscript/replication/audit separation, central formula displays, scoped exact/analogous/framework citations, and non-carbon design portability.
+- Reconciled current package version metadata; retained historical entries, seven underlying Skills, both JMU sources, two prose passes and all v2.3/v2.2/v2.1 argument/source gates.
+- No new dependency, literature-validation script or permanent quality gate. This is not an installed or published stable release.
+
+
+## v2.4.0-rc1 — Data and Empirical Framework Writing Pilot (local only)
+
+- Added the original `references/data-empirical-framework-guide.md`, describing concise source provenance, economic meaning of variables, essential formulas/thresholds, interpretation of models and classifications, and safe relocation of technical settings to replication materials.
+- Expanded the Section 3 writing rules in `SKILL.md` and the independent Cursor referee checklist with an **editorial** `DATA_METHODS_EXPOSITION: PASS/HOLD`. No new validator, JSON schema, third-party dependency, or mechanism-citation quota.
+- Distinguished established methodological sources from merely analogous precedents; author-defined extensions are labelled accurately.
+- Preserved methodological limits that change conclusions even while reducing software trivia and repeated defensive prose.
+- Preserved v2.3 Introduction/Literature/Hypothesis rules and v2.2 Results and v2.1 Discussion gates. Stable GitHub v2.3.0 and manuscripts remain unchanged.
+- Included a local v2.9 Section 3.1–3.5 worked pilot example, **not** an instruction to impose that subsection numbering or those formulas on other studies.
+
+
 ## v2.3.0 — Stable Introduction and Literature Synthesis Release
 
 - Promoted the independently tested v2.3 RC1 writing rules to stable v2.3.0, maintaining the seven dependencies and existing Results/Discussion gates.

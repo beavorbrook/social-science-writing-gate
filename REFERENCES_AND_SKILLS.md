@@ -1,4 +1,6 @@
-# Social-science-writing-gate v2.3.0 — all coordinated Skills and references
+# Social-science-writing-gate v2.4.0-rc2 — coordinated Skills and reference inventory
+
+Unreleased candidate for planned v2.4.0. Earlier version headings below describe retained provenance, not the current package release status.
 
 This is an inventory **of dependencies and ideas cited in this Skill package**, not a claim that each upstream project is installed on the user's computer. The package includes only this coordinating Skill and original synthesis documents; it does **not** bundle the external Skills or books.
 
@@ -35,7 +37,7 @@ These are **sources of adapted writing rules**, not extra dependencies that the 
 
 ## D. Coordinating Skill and bundled original reference files
 
-- `SKILL.md` — authoritative coordinating instructions, now v2.3; retains the v2.1 mechanism-citation and v2.2 Results gates, adds Introduction/Literature/hypothesis checks.
+- `SKILL.md` — authoritative coordinating instructions, now v2.4.0-rc2 (unreleased); retains the v2.1 mechanism-citation and v2.2 Results gates, adds Introduction/Literature/hypothesis checks.
 - `references/economic-argument-guide.md` — applied argument patterns, evidence levels S1–S5 and new v2.1 citation examples.
 - `references/referee-and-source-checklist.md` — source provenance, independent referee rubric and new v2.1 source-by-claim audit.
 - `REFERENCES_AND_SKILLS.md` — this inventory.
@@ -55,3 +57,12 @@ Additional maintenance files: `INSTALL.md` and `CHANGELOG.md`.
 ## v2.3.0 — Introduction/Literature/Hypothesis reference
 
 `references/introduction-literature-argument-guide.md` is a new **original synthesized** guide. It adapts general economics writing logic and closest-literature-positioning principles already cited in Section C; it does not copy the upstream `franklee16` or other Skill files. It adds a cross-paper editorial rule: sensitivity and robustness checks are supporting analyses, not numbered H4/Hn research hypotheses. The v2.3.0 refinement also emphasizes concrete economic openings and selective Results previews. This is the published stable version.
+
+
+## v2.4.0-rc2 — Data and Empirical Framework guide (local pilot)
+
+`references/data-empirical-framework-guide.md` is an **original synthesis** of manuscript-writing principles and the user's provided Zhejiang v2.9 Section 3.1–3.5 sample, not an additional third-party Skill or externally verified methods paper. It introduces the Source–Formula–Economic Meaning editorial check and the Cursor `DATA_METHODS_EXPOSITION` sub-review. The worked Zhejiang example is illustrative, not a prescribed model set. Data/method citations must be verified separately for the manuscript; this guide does not certify the papers cited in the user's draft.
+
+## v2.4.0-rc2 refinement
+
+The Methods guide separates manuscript/replication/audit layers, improves display-equation selection, distinguishes exact/analogous/framework support, and uses conditional accounting and non-carbon econometric examples. No additional dependency, validator or permanent quality gate. The four earlier reference guides retain their scope; the Introduction, Results and economic-argument guide files are unchanged.

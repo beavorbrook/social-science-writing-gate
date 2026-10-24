@@ -17,6 +17,7 @@ For each major section, Cursor must provide **passage location, specific claim, 
 | Research contribution | New understanding, measurement, or differentiation, not just more methods | Key economic question remains unanswered with no honest boundary |
 | Intro and review positioning (v2.3) | Economic question beyond identities; grounded closest-work comparison; literature synthesized by findings and scope | Method combination called novelty without comparison; unsourced gap or author–year list substitutes for synthesis |
 | Hypothesis taxonomy (v2.3) | Economic propositions separated from unnumbered robustness and measurement sensitivity | Sensitivity/robustness is labeled as standalone H4/Hn or presented as independent economic finding |
+| Data/Methods exposition (v2.4) | Data source, model formula, economic meaning, source-method fit and reproducible technical record | Core equation/threshold wrong or absent; GDP/emissions definitions drift; unrelated citation presented as exact method; crucial assumption concealed |
 | Scientific integrity | Accurate model, data, uncertainty and study boundary | Invented numbers, unsupported causal sign, false replication claim |
 | Prose | Concise, fair, readable after substantive accuracy | Language polish conceals thin economic reasoning |
 
@@ -98,3 +99,20 @@ Load `references/introduction-literature-argument-guide.md` when checking Introd
 **Hypotheses:** Explicitly inspect every proposed numbered `Hn`. Confirm that each refers to a substantive, answerable economic proposition or labeled descriptive expectation; test, robustness, measurement sensitivity, alternative inventory/price definitions, sample omissions, and model diagnostic checks belong in Methods/Robustness without `Hn` numbering. Return `HYPOTHESIS_TAXONOMY: HOLD` for a new candidate that contains a sensitivity H4/Hn. For approved legacy text, report the issue and exact dependent cross-references and request author-scoped migration approval; never silently edit protected text. There need not be a fixed number of hypotheses.
 
 Return passage-level `Critical/Major/Minor`, source citation/locator where available, a bounded correction, and separate **diagnostic sub-gates**: `INTRODUCTION_ARGUMENT: PASS/HOLD`, `LITERATURE_SYNTHESIS: PASS/HOLD`, `HYPOTHESIS_TAXONOMY: PASS/HOLD`. They are editorial sub-checks of the existing economic-interpretation decision, **not** a new validator, JSON schema, or substitute for upstream citation QA. Keep scientific and citation-integrity statuses separate. Genuine ACP assignment/results only; never forge independence.
+
+
+## 9. v2.4 Data & Empirical Framework referee (real Cursor ACP)
+
+For the unreleased v2.4.0-rc2 Methods refinement, check the manuscript/replication/audit separation and central-equation displays without rewarding needless renumbering. Verify exact/analogous/framework labels at actual source depth. Translate the same questions to the submitted design: panel FE, Logit or causal methods need their own estimands, interpretation and inference/identification conditions, not carbon equations or fixed example cutoffs. Existing editorial gates remain; no new executable validator.
+
+For substantive revisions of a Data, Measurement or Empirical Framework section, load `references/data-empirical-framework-guide.md`. Do **not** grade the prose using a software-procedure-count or citations-per-equation metric. Read the actual frozen source equations, data dictionary, approved table/figure definitions and matched Results.
+
+**Independent check A — Data provenance and scope:** Verify observational units, dates, source version, raw versus constructed measures, spatial/price definitions and unit consistency; each citation supports its actual operation. A similar decomposition or interpolation is not a verified exact equivalent.
+
+**Independent check B — Economic interpretation:** Verify every central measure/estimator has its essential formula/rule **and economic meaning**. Inspect province-versus-city weighting, LMDI factor signs and sum, supplementary identity scope, and interval-specific decoupling thresholds where these models appear. Do not require these models in unrelated studies.
+
+**Independent check C — Reader-facing economy:** Inspect long provenance passages, unnecessary statistical software defaults, defensive disclaimers and excessively technical table notes. Prefer relocation of nonmaterial settings over deletion. Require an appropriate replication pointer for settings that affect numerical outcomes.
+
+**Independent check D — Change protection and structure:** Check descriptive chart relocation, caption labels, model numbering, Table 1, removed subsections and any downstream cross-references. A deleted sensitivity subsection cannot silently eliminate the method definition for a retained sensitivity result. No standalone sensitivity H4/Hn.
+
+For each material problem return `(exact passage → issue → source/equation evidence → severity → minimum patch)`. Report `DATA_METHODS_EXPOSITION: PASS/HOLD` as **editorial** plus `SCIENTIFIC_INTEGRITY: PASS/HOLD` and `SOURCE_METHOD_MATCH: VERIFIED/PARTIAL/HOLD`. A passing editorial check is not a canonical literature-validator pass and cannot change a formal `audit_incomplete` status. Genuine ACP assignment and evidence are required; never invent a Cursor verdict.

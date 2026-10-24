@@ -1,74 +1,20 @@
-# 安装与回退说明（正式版 v2.3.0）
+# Install and pilot validation — v2.4.0-rc2
 
-这是对原 `social-science-writing-gate` 的**升级**，名称保持不变。文件夹已经具有 Codex 项目级 Skill 所需的结构。**正式升级前先备份原Skill，确认实际生效路径后仅更新同名安装。**`references/` 是按需读取的补充指南，不会自动安装另外三个 GitHub 项目的全套 Skills。
+**Unreleased release candidate for planned v2.4.0. This is an isolated candidate, not a GitHub update or an instruction to overwrite stable v2.3.0.** Keep the existing approved manuscript and Skills untouched. The archive top-level directory is `social-science-writing-gate/` and contains `SKILL.md` and all referenced local guides.
 
-## 正式安装位置
+## Safest local test
 
-**正式版已发布。** 安装前先验证GitHub仓库主分支和ZIP均显示 `v2.3.0`，再更新现有安装；不要同时维护两个可发现的同名Skill。
+1. Record the active Skill location/version and its SHA-256 file inventory. Back up any local customizations.
+2. Extract the ZIP into a separate project test folder, e.g. `skill_candidate_v2.4.0-rc2/social-science-writing-gate/`.
+3. In the Codex pilot instructions, explicitly load `skill_candidate_v2.4.0-rc2/social-science-writing-gate/SKILL.md` and `references/data-empirical-framework-guide.md`. Do **not** rely on automatic discovery of a noninstalled candidate.
+4. Verify all 10 Markdown files and confirm the three pre-existing `references/economic-argument-guide.md`, `references/results-economic-comparison-guide.md` and `references/introduction-literature-argument-guide.md` guides remain unchanged in content. Check all seven upstream Skills remain installed; do not reinstall or replace them.
+5. Conduct a separate, protected Section 3 A/B evaluation with real Cursor ACP, preserving the stable 2.3.0 Skill, the approved manuscript and all results. Return `DATA_METHODS_EXPOSITION`, `SCIENTIFIC_INTEGRITY`, `SOURCE_METHOD_MATCH`, and genuine ACP verification; keep the formal literature validator in its independent status.
+6. If the pilot loses essential definitions, sources, formulae, reproducibility or Results links, mark HOLD even when the prose becomes shorter. Do not merge or publish the candidate without author approval.
 
-项目级：
+## Permanent installation after a future author decision
 
-`/path/to/your/research-project/.agents/skills/social-science-writing-gate/`
+Only after acceptance: use a versioned backup and update the *one* intended active Skill folder. No duplicate active variants and no automatic modification of `econ-write`, other original skills or literature-validator code. Current official stable source: https://github.com/beavorbrook/social-science-writing-gate (v2.3.0).
 
-推荐先备份原 Skill，再复制整个新文件夹（保留 `references/` 子目录）。示例在项目根目录终端执行，假设下载的ZIP已解压到 `~/Downloads/`：
+## Rollback
 
-```bash
-cd '/path/to/your/research-project'
-mkdir -p .agents/skills
-if [ -d .agents/skills/social-science-writing-gate ]; then
-  cp -a .agents/skills/social-science-writing-gate \
-        ".agents/skills/social-science-writing-gate.backup.$(date +%Y%m%d-%H%M%S)"
-fi
-cp -R "$HOME/Downloads/social-science-writing-gate/." \
-      .agents/skills/social-science-writing-gate/
-```
-
-**更稳妥办法**：先将压缩包解压到一个新目录；检查是否包含顶层 `social-science-writing-gate/SKILL.md`、四个 `references/*.md` 文件及 `REFERENCES_AND_SKILLS.md`，再复制整个文件夹。不要把压缩包内容直接散放在 `.agents/skills/` 根目录。
-
-若你使用Codex的用户级目录，也可安装到 `~/.agents/skills/social-science-writing-gate/`，但**不建议同时维护不同版本的同名Skill**；以实际安装位置和Codex可发现的路径为准。通过ACP使用Cursor时，明确传递此项目级路径并要求Cursor读文件；不要以“Cursor能看到文件夹”推断它已经使用了Skill。
-
-## 验证
-
-在本机运行：
-
-```bash
-head -n 12 '.agents/skills/social-science-writing-gate/SKILL.md'
-test -f '.agents/skills/social-science-writing-gate/references/introduction-literature-argument-guide.md' && echo 'v2.3 Reference OK'
-test -f '.agents/skills/social-science-writing-gate/references/economic-argument-guide.md' && echo 'Reference 1 OK'
-test -f '.agents/skills/social-science-writing-gate/references/referee-and-source-checklist.md' && echo 'Reference 2 OK'
-test -f '.agents/skills/social-science-writing-gate/REFERENCES_AND_SKILLS.md' && echo 'Inventory OK'
-grep -n 'Mandatory claim-level mechanism citation gate' '.agents/skills/social-science-writing-gate/SKILL.md' 
-```
-
-然后在Codex对话输入：
-
-> Read the project skill `social-science-writing-gate` and its economic interpretation requirements. Summarize the Economic Argument Matrix, the v2.1 claim-level mechanism citation rule (retained in v2.3) (normally 1–2 directly relevant studies per important judgment or 1–3 complementary studies per channel cluster), source-to-claim placement, and the separate scientific/economic/mechanism citation gates; do not enforce a mechanical citation quota. Do not modify the manuscript yet.
-
-通过条件：它能提到经济现象、竞争机制及证据等级、现实含义、经济学解释的独立PASS/HOLD、仍保留七项Skills/JMU/两轮Anti-Defensive检查，而不是只说“写作风格良好”。
-
-## 回退
-
-关闭相关Codex/Cursor会话后，将备份目录内容恢复到 `.agents/skills/social-science-writing-gate/` 即可。备份属于本地文件，发布包中没有以前机器上的配置内容。
-
-## 使用注意
-
-- 本次只是文件包生成和供用户在Mac安装；未连接或修改本机Codex配置。
-- 不会改变已有项目数据、论文或Codex–Cursor ACP配置。
-- 对仅数据检索/数值审核的任务，无须强制做两遍反防御性写作。
-- 严格审查经济机制不意味着强制重新计算或改变原研究结论。
-
-## v2.2 additional verification
-
-Ensure the agent can distinguish: (a) the paper's own Table/Figure-based findings, (b) externally supported economic mechanisms, (c) untested city-specific attribution. Ask it to explain how `MECHANISM_CITATION_HOLD` is triggered. The repository/package files have been validated here; **this does not confirm installation or actual skill discovery on your Mac**.
-
-
-## v2.2 Results check
-
-When updating from v2.1, keep the original directory and overwrite the seven existing files plus the new `references/results-economic-comparison-guide.md` after a backup. Confirm the new guide exists and that `SKILL.md` contains `Substantive Economic Magnitude and Comparison Gate`. Test by asking Codex to identify the most informative verified economic contrast in an approved Results table, calculate it with a source trail, and have Cursor independently check whether it is properly explained. The new quality sub-gate is `RESULTS_EXPOSITION: PASS/HOLD`. No existing Discussion gate is removed.
-
-
-## v2.3.0正式版的使用边界
-
-v2.3.0已经通过历史RC1的Introduction/Literature/Hypothesis写作试验并在GitHub主分支发布。安装时请更新经过确认的活动Skill路径，不再采用历史RC1隔离目录作为正式安装。旧版备份应妥善保留，以便回滚。
-
-本Skill不捆绑上游 `econ-write` 的引文验证器，也不替代其正式引文核验门禁。其他项目的 `audit_incomplete` 状态不能仅凭本Skill的写作质量PASS解除。
+The entire test lives outside the active Skill directory. Deleting the isolated candidate restores the status quo; no rollback of paper files or GitHub is needed.
